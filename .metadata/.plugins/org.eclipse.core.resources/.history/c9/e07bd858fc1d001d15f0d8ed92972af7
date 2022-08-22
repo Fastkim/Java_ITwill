@@ -1,0 +1,14 @@
+// 주석(comment): 프로그램에 대한 설명을 작성.
+// 주석은 컴파일할 때 제외됨.(실행되지 않는 코드)
+
+package edu.java.intro1; // 패키지 선언문.
+// 자바의 모든 문장은 세미콜론(;)으로 끝남.
+
+// 클래스 선언(정의)
+public class AppMain1 {
+
+	public static void main(String[] args) {
+		System.out.println("안녕하세요, 여러분!");
+	}
+
+}

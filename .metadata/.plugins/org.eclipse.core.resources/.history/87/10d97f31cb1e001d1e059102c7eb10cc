@@ -1,0 +1,17 @@
+package edu.java.condition04;
+
+import java.util.Random;
+
+public class ConditionMain04 {
+
+    public static void main(String[] args) {
+        // Random 클래스 : 난수를 발생시키는 기능을 가지고 있는 클래스
+        Random random = new Random(); // Random 타입의 변수를 선언, 초기화.
+        
+        // 0 이상 5 이하(6 미만)의 정수 난수 생성.
+        int x = random.nextInt(6);
+        System.out.println("x = " + x);
+    }
+
+}
+

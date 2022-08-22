@@ -1,0 +1,28 @@
+package edu.java.condition04;
+
+import java.util.Random;
+
+public class ConditionMain04 {
+
+    public static void main(String[] args) {
+        // Random 클래스 : 난수를 발생시키는 기능을 가지고 있는 클래스
+        Random random = new Random(); // Random 타입의 변수를 선언, 초기화.
+        
+        // 0 이상 10 이하(11 미만)의 정수 난수 생성.
+        int x = random.nextInt(6);
+        System.out.println("x = " + x);
+        
+        int y = random.nextInt(11);
+        System.out.println("y = " + y);
+        
+        int diff;
+        
+        // 두 숫자 x와 y의 차이(큰 수 - 작은 수)
+        if(x>y) {
+            diff = x - y;
+        }else(y>x){
+            diff = y - x;
+    }
+
+}
+

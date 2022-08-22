@@ -1,0 +1,21 @@
+package edu.java.variable04;
+
+import java.util.Scanner;
+
+public class VariableMain04 {
+
+	public static void main(String[] args) {
+		// 콘솔 창에서 키보드로 숫자를 입력받아서 변수에 저장.
+		
+		// 1. Scanner 타입의 변수를 선언하고 초기화.
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("정수를 입력>>>");
+		
+		// 2. Scanner 객체를 사용해서 콘솔 창에서 정수를 입력받고 저장.
+		int number = scanner.nextInt();
+		
+		System.out.println("number = " + number);
+	}
+
+}

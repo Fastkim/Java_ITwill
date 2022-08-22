@@ -1,0 +1,31 @@
+package edu.java.loops08;
+
+public class LoopMain08 {
+
+    public static void main(String[] args) {
+        // 중첩 반복문
+        for(int dan = 2 ;dan < 10; dan++ ) {
+            System.out.println("---" + dan + "단 ---" );
+            for(int i = 1; i < 10; i++) {
+            System.out.println(dan + " x " + i + " = " + (i * dan));
+            }
+            System.out.println();
+        }
+           
+System.out.println("-------------------------------------------------------------");  
+System.out.println();
+    
+    // while
+    
+    int dan = 2;
+    int i = 1;
+    while(dan<=10) {
+        System.out.println("---" + dan + "단 ---" ); 
+        while(i<=10) {
+            System.out.println(dan + " x " + i + " = " + (i * dan));
+            i++;
+        }
+        System.out.println();
+        }
+    }
+}

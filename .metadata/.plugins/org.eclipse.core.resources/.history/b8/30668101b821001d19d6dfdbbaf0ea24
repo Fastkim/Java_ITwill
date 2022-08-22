@@ -1,0 +1,10 @@
+package edu.java.rps;
+
+public class RpsMain02 {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}

@@ -1,0 +1,20 @@
+package edu.java.loop01;
+
+public class LoopMain01 {
+
+    public static void main(String[] args) {
+        // 반복문
+        System.out.println("java" + 0);
+        System.out.println("java" + 1);
+        System.out.println("java" + 2);
+        System.out.println("java" + 3);
+        System.out.println("java" + 4);
+        
+        // for 문
+        for (int i=0;i<5;i++) {
+            System.out.println("java" + i);
+        }
+
+    }
+
+}
