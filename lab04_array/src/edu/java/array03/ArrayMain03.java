@@ -8,36 +8,36 @@ public class ArrayMain03 {
         // Random 객체를 선언, 생성.
         
         Random random = new Random();
-        
-        int x[] = new int[10];
-        
-        for(int i=0;i<10;i++) {
-            x[i] = random.nextInt(10);
-        }
-        
-        
+
         // 정수 10개를 저장할 수 있는 배열(scores)을 선언.
         
         int scores[] = new int[10];
         
         // 배열 scores에 0 이상 10 이하의 정수 난수 10개를 저장.
         
-        for(int i=0; i<10; i++) {
-            scores[i] = x[i];
+        for(int i=0; i < scores.length; i++) {
+            scores[i] = random.nextInt(11);
             System.out.println("score[" + i + "]" + "=" + scores[i]);
         }
+        
             
         // 배열 scores에 저장된 모든 점수들의 합계를 계산하고 출력.
         int sum = 0;
-        for(int i=0; i<10; i++) {
+        for(int i=0; i<scores.length; i++) {
             sum = sum + scores[i];
         }
+        
+        // 배열 scores에 저장된 모든 값들의 합을 도출하는 another way
+        /* int sum = 0;
+        for (int x : scores) {
+            sum += x;
+        } 다른 방법. */
         
         System.out.println("배열 scores의 총합은 : " + sum);
             
         // 배열 scores에 저장된 모든 점수들의 평균을 소수점까지 계산해서 출력.
             
-        double avg = (double)sum/scores.length;
+        double avg = (double)sum/scores.length; //강제 형변환
         System.out.println("배열 scores에 저장된 모든 점수들의 평균은 : " + avg);
         
     }
