@@ -5,7 +5,7 @@ import java.util.Random;
 public class ArrayMain08 {
 
     public static void main(String[] args) {
-        // Ch. 6-2 Ex. 5 (p201)
+        // Ch. 5-2 Ex. 5 (p201)
         // 1차원 정수(int) 배열 3개를 갖는 2차원 배열을 선언
         
         int[][] array = new int[3][];
