@@ -24,18 +24,25 @@ public class MethodMain01 {
         System.out.println("1"); // println() 메서드 호출
         newLine(); // newLine() 메서드 호출(사용)
         System.out.println("2");
-        newLines(3);
+        newLines(3); // newLines() 메서드를 호출하면서 3을 argument로 전달.
         System.out.println("3");
         
     } // end main
     
     
     // 함수 정의(선언)
+    
+    /**
+     * 빈 줄 n개를 출력. 
+     *  
+     *  @param n 출력할 빈 줄의 개수. 양의 정수.
+     */
+    
     public static void newLine() {
         System.out.println();
     }
     
-    public static void newLines(int n) {
+    public static void newLines(int n) { // int n => parameter
         for (int i = 0; i < n; i++)
             System.out.println();
     }
