@@ -24,6 +24,8 @@ public class ArrayMain09 {
             int selectNo = Integer.parseInt(scanner.nextLine());
             
             if(selectNo == 1) {
+                // 만약 학생수 0을 입력했을 때는 Null은 아니고 배열이 생성은 되지만 원소가 존재하지않으므로
+                // selectNo == 2,3,  
                 // 학생 수 입력받기
                 System.out.print("학생수> ");
                 studentNum = Integer.parseInt(scanner.nextLine());
