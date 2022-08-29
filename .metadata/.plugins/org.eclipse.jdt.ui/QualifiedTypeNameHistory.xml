@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.java.class02.Product"/>
+    <fullyQualifiedTypeName name="edu.java.class03.Rectangle"/>
 </qualifiedTypeNameHistroy>
