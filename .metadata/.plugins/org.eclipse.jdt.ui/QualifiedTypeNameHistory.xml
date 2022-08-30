@@ -6,4 +6,7 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.java.class02.Product"/>
     <fullyQualifiedTypeName name="edu.java.class03.Rectangle"/>
+    <fullyQualifiedTypeName name="edu.java.modifier01.AccessTest"/>
+    <fullyQualifiedTypeName name="edu.java.modifier03.Person"/>
+    <fullyQualifiedTypeName name="edu.java.modifier06.PublicClass"/>
 </qualifiedTypeNameHistroy>

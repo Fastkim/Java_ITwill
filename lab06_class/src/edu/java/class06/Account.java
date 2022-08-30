@@ -10,6 +10,7 @@ public class Account {
     double balance; // 잔고
     
     // constructor - argument 2개를 갖는 생성자.
+    // 매개변수 = 파라미터(Parameter)
     
     public Account(int accountNo,double balance) {
         this.accountNo = accountNo;
@@ -19,13 +20,13 @@ public class Account {
     /**
      * 입금(deposit)
      * 
-     * @param amount 입금액
+     * @param amount 입금액.
      * @return 입금 후 잔액을 리턴.
      */
     
     public double deposit(double amount) {
-        balance += amount; 
-        return balance;
+        this.balance += amount;  // this.balance = this.balance + amount
+        return this.balance;
     }
     
     /**
@@ -35,10 +36,9 @@ public class Account {
      * @return 출금 후 잔액을 리턴.
      */
     
-    public double withdraw(double amount) {
-        
-        balance -= amount;
-        return balance;
+    public double withdraw(double amount) { 
+        this.balance -= amount;
+        return this.balance;
     }
     
     /**
@@ -49,9 +49,15 @@ public class Account {
      * @return true(이체 성공).
      */
     
-    public boolean transfer(Account client,Account client2,double amount) {
-        client.balance -= amount;
-        client2.balance += amount;
+    public boolean transfer(Account to, double amount) { 
+        // 클래스 이름은 클래스가 완성되지 않아도 단순히 변수를 선언하기 위한 데이터 타입으로써 사용할수있다.
+        // 이체 : (1) 내 계좌 출금. (2) 상대방 계좌 입금.
+//        this.balance -= amount;
+//        to.balance += amount;
+        
+        // 메서드를 직접 호출해서 이용한 경우
+        this.withdraw(amount);
+        to.deposit(amount);
         
         return true;
     }
@@ -61,6 +67,7 @@ public class Account {
      */
     
     public void printAccountInfo() {
+        System.out.println("--- 계좌 정보 ---");
         System.out.println("계좌번호 : " + this.accountNo);
         System.out.println("잔액 : " + this.balance);
         
