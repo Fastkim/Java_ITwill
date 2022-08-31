@@ -9,7 +9,7 @@ package edu.java.modifier07;
 // - 객체를 생성한 후에, 참조 변수를 이용해서 사용.
 // - Java Runtime이 사용하는 메모리 공간 중 Heap(힙) 영역에 생성됨.
 
-// static 멤버(변수/필드, 메서드)
+// static(전역/정적) 멤버(변수/필드, 메서드)
 // - static 수식어가 사용된 멤버.
 // - 객체를 생성하지 않아도 사용할 수 있는 멤버.
 // - 클래스 이름을 이용해서 사용. (예) Math.PI, Math.sqrt()
@@ -48,7 +48,7 @@ public class ModifierMain07 {
         System.out.println();
         
         final int number = 100;
-        number = 200;  //final 지역 변수의 값은 변경할 수 없음.
+//        number = 200;  //final 지역 변수의 값은 변경할 수 없음.
         
         FinalTest ftest = new FinalTest(100);
         System.out.println(ftest.getNumber());
