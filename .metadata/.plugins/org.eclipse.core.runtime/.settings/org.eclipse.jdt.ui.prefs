@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="edu.java.class02.Product"><rhs name\="edu.java.class02.Product"/></lhs><lhs name\="edu.java.class03.Rectangle"><rhs name\="edu.java.class03.Rectangle"/></lhs><lhs name\="edu.java.modifier03.Person"><rhs name\="edu.java.modifier03.Person"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="edu.java.class02.Product"><rhs name\="edu.java.class02.Product"/></lhs><lhs name\="edu.java.class03.Rectangle"><rhs name\="edu.java.class03.Rectangle"/></lhs><lhs name\="edu.java.modifier03.Person"><rhs name\="edu.java.modifier03.Person"/></lhs><lhs name\="edu.java.inheritance03.Car"><rhs name\="edu.java.inheritance03.HybridCar"/></lhs><lhs name\="edu.java.inheritance03.HybridCar"><rhs name\="edu.java.inheritance03.HybridCar"/></lhs></history>
 content_assist_number_of_computers=17
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0

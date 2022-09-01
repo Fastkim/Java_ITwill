@@ -10,4 +10,6 @@
     <fullyQualifiedTypeName name="edu.java.modifier03.Person"/>
     <fullyQualifiedTypeName name="edu.java.modifier06.PublicClass"/>
     <fullyQualifiedTypeName name="edu.java.contact.menu.MainMenu"/>
+    <fullyQualifiedTypeName name="edu.java.inheritance03.Car"/>
+    <fullyQualifiedTypeName name="edu.java.inheritance03.HybridCar"/>
 </qualifiedTypeNameHistroy>

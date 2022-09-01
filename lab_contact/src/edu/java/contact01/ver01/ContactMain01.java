@@ -5,19 +5,23 @@ import java.util.Scanner;
 import edu.java.contact.menu.MainMenu;
 
 public class ContactMain01 {
+    
     // 상수
     private static final int MAX_LENGTH = 3; // 저장할 수 있는 연락처의 최대 개수(배열 길이).
+    
     
     // field
     private Scanner scanner = new Scanner(System.in); // 입력 도구
     private Contact[] contacts = new Contact[MAX_LENGTH]; // 연락처들의 배열
     private int count = 0; // 배열에 저장된 연락처의 개수. 새 연락처가 추가될 때마다 count 값은 증가된다.
     
+    
     public static void main(String[] args) {
         System.out.println("***** 연락처 프로그램 Version 0.1 *****");
         
         // static이 아닌 메서드들을 호출하기 위해서 객체를 생성할 필요가 있음.
         ContactMain01 app = new ContactMain01();
+        app.contacts[0].
         
         boolean run = true; // 프로그램을 계속 실행할 지, 종료할 지를 결정하기 위한 변수.
         while(run) {
@@ -61,7 +65,7 @@ public class ContactMain01 {
         System.out.print("수정할 연락처 인덱스>> ");
         int index = Integer.parseInt(scanner.nextLine());
         
-        if (index+1 > count) {
+        if (index >= count || index < 0) {
             
             System.out.println("추가되지 않은 연락처입니다. 다시 입력해주세요. ");
         }
@@ -93,14 +97,15 @@ public class ContactMain01 {
     }
 
     private void selectContactByIndex() {
-        // TODO : NullPointerException 또는 ArrayIndexOutofBoundsException 완료 - 과제
         // 검색할 인덱스 입력
         System.out.print("검색할 인덱스>> ");
         int index = Integer.parseInt(scanner.nextLine());
         
-        if (index+1 > count) {
+        // TODO : NullPointerException 또는 ArrayIndexOutofBoundsException 완료 - 과제
+        if (index >= count || index < 0) {
             
             System.out.println("추가되지 않은 연락처입니다. 다시 입력해주세요. ");
+            return; // 메서드 종료
         }
         
         else {
