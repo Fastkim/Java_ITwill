@@ -21,7 +21,6 @@ public class ContactMain01 {
         
         // static이 아닌 메서드들을 호출하기 위해서 객체를 생성할 필요가 있음.
         ContactMain01 app = new ContactMain01();
-        app.contacts[0].
         
         boolean run = true; // 프로그램을 계속 실행할 지, 종료할 지를 결정하기 위한 변수.
         while(run) {

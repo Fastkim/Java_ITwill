@@ -27,6 +27,7 @@ public class InheritanceMain04 {
         
         // final 메서드 : override할 수 없는 메서드. 불가역적이고 최종적일때
         // final 클래스 : 상속받을 수 없는 클래스.
+        // class TestString extends String {}
         
     }
 

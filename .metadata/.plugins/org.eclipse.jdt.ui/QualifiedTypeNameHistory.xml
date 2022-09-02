@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="java.lang.invoke.MethodHandles.Lookup.ClassOption"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.java.class02.Product"/>
     <fullyQualifiedTypeName name="edu.java.class03.Rectangle"/>
     <fullyQualifiedTypeName name="edu.java.modifier01.AccessTest"/>
@@ -12,4 +11,7 @@
     <fullyQualifiedTypeName name="edu.java.contact.menu.MainMenu"/>
     <fullyQualifiedTypeName name="edu.java.inheritance03.Car"/>
     <fullyQualifiedTypeName name="edu.java.inheritance03.HybridCar"/>
+    <fullyQualifiedTypeName name="edu.java.inheritance08.Vehicle"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
