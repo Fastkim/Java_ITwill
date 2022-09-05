@@ -12,6 +12,11 @@
     <fullyQualifiedTypeName name="edu.java.inheritance03.Car"/>
     <fullyQualifiedTypeName name="edu.java.inheritance03.HybridCar"/>
     <fullyQualifiedTypeName name="edu.java.inheritance08.Vehicle"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="edu.java.interface01.DatabaseModule"/>
+    <fullyQualifiedTypeName name="edu.java.interface01.OracleDatabaseModule"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="edu.java.mvc.model.Member"/>
+    <fullyQualifiedTypeName name="edu.java.mvc.controller.MemberDaoImpl"/>
 </qualifiedTypeNameHistroy>
