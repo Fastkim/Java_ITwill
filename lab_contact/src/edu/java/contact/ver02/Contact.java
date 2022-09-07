@@ -1,5 +1,6 @@
-package edu.java.contact01.ver01;
+package edu.java.contact.ver02;
 
+// MVC 아키텍쳐 Model에 해당하는 클래스
 public class Contact {
     // field
     private String name;
@@ -42,11 +43,9 @@ public class Contact {
     }
     
     // 연락처 정보 출력
-    public void printContact() {
-        String info = String.format("Contact(name=%s, phone=%s, email=%s)", 
+    public String toString() {
+        return String.format("Contact(name=%s, phone=%s, email=%s)", 
                 this.name, this.phone, this.email);
-        System.out.println(info);
-        
     }
     
 }

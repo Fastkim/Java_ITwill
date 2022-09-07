@@ -1,4 +1,4 @@
-package edu.java.contact01.ver01;
+package edu.java.contact.ver01;
 
 import java.util.Scanner;
 
@@ -61,12 +61,9 @@ public class ContactMain01 {
     private void updateContact() {
         // TODO : NullPointerException 또는 ArrayIndexOutOfBoundsException 발생할 수 있음.
         // 수정할 연락처 인덱스 입력
-        System.out.print("수정할 연락처 인덱스>> ");
         int index = Integer.parseInt(scanner.nextLine());
-        
         if (index >= count || index < 0) {
             
-            System.out.println("추가되지 않은 연락처입니다. 다시 입력해주세요. ");
         }
         else {
             
