@@ -24,7 +24,6 @@ import java.util.Iterator;
  * 1. Linked List 알고리즘을 사용한 리스트.
  * 2. 데이터 저장/삭제 속도 빠름.
  * 3. 데이터 검색 속도 느림.
- * 
  */
 
 public class ListMain01 {
