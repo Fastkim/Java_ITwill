@@ -92,7 +92,7 @@ public class ContactMain02 {
 		
 		Contact[] contacts = dao.select(); // controller의 메서드를 호출.
 		
-		System.out.println("--- 회원 리스트 ---");
+		System.out.println("--- 연락처 리스트 ---");
 		for (Contact c : contacts) {
 			System.out.println(c);
 		}

@@ -12,10 +12,6 @@ public class ContactDaoImpl implements ContactDao {
 		// 배열에 저장된 Contact 객체의 개수. Contact 객체가 배열에 저장될 때마다 1씩 증가.
 		private int count = 0;
 
-		public int getCount() {
-			return count;
-		}
-
 		// Controller 클래스는 Singleton으로 설계: 1) + 2) + 3)
 		// 1) 자기자신 타입의 private static인 변수 선언
 		private static ContactDaoImpl instance = null;
