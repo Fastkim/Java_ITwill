@@ -3,7 +3,7 @@ package edu.java.contact.ver02;
 import edu.java.contact.ver02.Contact;
 
 // MVC 아키텍쳐에서 Controller의 인터페이스 - 메서드 선언
-public interface ContactDao {
+public interface ContactDao { // Data Access Object(Dao) Access: 저장, 수정, 삭제, 검색
 	
 	/**
      * 신규 연락처 정보 등록. Argument로 전달된 Contact 객체를 배열에 저장.

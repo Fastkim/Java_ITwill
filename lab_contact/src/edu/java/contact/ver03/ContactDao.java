@@ -4,13 +4,13 @@ import java.util.List;
 
 import edu.java.contact.ver02.Contact;
 
-public interface ContactDao {
+public interface ContactDao { // Data Access Object(Dao) Access: 저장, 수정, 삭제, 검색
 
     /**
      * 연락처 정보를 저장하고 있는 리스트를 리턴.
      * @return List<Contact>. 연락처가 하나도 없는 경우에는 빈 리스트를 리턴. null을 리턴하지 않음.
      */
-    List<Contact> read();
+    List<Contact> read(); 
     
     /**
      * 인덱스 검색 기능.

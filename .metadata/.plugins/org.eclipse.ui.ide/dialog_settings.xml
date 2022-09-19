@@ -19,6 +19,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\study\lab-java\lab13_file01\src\data"/>
 			<item value="E:\study\lab-java\lab_contact\src\edu\java\contact\ver01"/>
 			<item value="E:\study\lab-java\lab_contact\src\edu\java\contact\ver02"/>
 			<item value="E:\study\lab-java\lab09_MVC\src\edu\java\mvc\view"/>
