@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.invoke.MethodHandles.Lookup.ClassOption"/>
-    <fullyQualifiedTypeName name="edu.java.class02.Product"/>
-    <fullyQualifiedTypeName name="edu.java.class03.Rectangle"/>
-    <fullyQualifiedTypeName name="edu.java.modifier01.AccessTest"/>
-    <fullyQualifiedTypeName name="edu.java.modifier03.Person"/>
-    <fullyQualifiedTypeName name="edu.java.modifier06.PublicClass"/>
-    <fullyQualifiedTypeName name="edu.java.inheritance03.Car"/>
-    <fullyQualifiedTypeName name="edu.java.inheritance03.HybridCar"/>
-    <fullyQualifiedTypeName name="edu.java.inheritance08.Vehicle"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.java.interface01.DatabaseModule"/>
     <fullyQualifiedTypeName name="edu.java.interface01.OracleDatabaseModule"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
@@ -17,7 +7,6 @@
     <fullyQualifiedTypeName name="edu.java.mvc.controller.MemberDaoImpl"/>
     <fullyQualifiedTypeName name="edu.java.exception03.ExceptionMain03"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="edu.java.exception06.Calculator"/>
@@ -45,19 +34,30 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver03.ContactDao"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="edu.java.contact.menu.MainMenu"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver03.ContactMain03"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver03.ContactDaoImpl"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver02.Contact"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="edu.java.file06.Product"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="edu.java.file08.Student"/>
+    <fullyQualifiedTypeName name="edu.java.file08.Score"/>
     <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 </qualifiedTypeNameHistroy>
