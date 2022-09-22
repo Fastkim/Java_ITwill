@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.java.interface01.DatabaseModule"/>
-    <fullyQualifiedTypeName name="edu.java.interface01.OracleDatabaseModule"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
-    <fullyQualifiedTypeName name="edu.java.mvc.model.Member"/>
-    <fullyQualifiedTypeName name="edu.java.mvc.controller.MemberDaoImpl"/>
-    <fullyQualifiedTypeName name="edu.java.exception03.ExceptionMain03"/>
-    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="edu.java.exception06.Calculator"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="edu.java.generic03.GenericCls"/>
-    <fullyQualifiedTypeName name="java.security.Timestamp"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="javax.security.auth.callback.LanguageCallback"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.java.list04.User"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
@@ -42,10 +25,7 @@
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="edu.java.file06.Product"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
@@ -60,4 +40,24 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver04.Contact"/>
+    <fullyQualifiedTypeName name="edu.java.inner01.Outer"/>
+    <fullyQualifiedTypeName name="edu.java.inner01.Outer.Inner"/>
+    <fullyQualifiedTypeName name="edu.java.inner01.Enclosing"/>
+    <fullyQualifiedTypeName name="edu.java.inner01.Enclosing.Nested"/>
+    <fullyQualifiedTypeName name="edu.java.inner02.OpenButtonListener"/>
+    <fullyQualifiedTypeName name="edu.java.inner02.Button"/>
+    <fullyQualifiedTypeName name="SaveButtonListener"/>
+    <fullyQualifiedTypeName name="edu.java.inner02.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="edu.java.inner03.Book"/>
+    <fullyQualifiedTypeName name="edu.java.inner03.Book.BookBuilder"/>
+    <fullyQualifiedTypeName name="Subtracter"/>
+    <fullyQualifiedTypeName name="edu.java.lambda01.Calculable"/>
+    <fullyQualifiedTypeName name="edu.java.lambda01.Printable"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 </qualifiedTypeNameHistroy>
