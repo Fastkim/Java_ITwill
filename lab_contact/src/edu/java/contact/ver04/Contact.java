@@ -2,9 +2,8 @@ package edu.java.contact.ver04;
 
 import java.io.Serializable;
 
-// MVC 아키텍쳐에서 Model에 해당하는 클래스. - 데이터를 정의하는 클래스.
-// ObjectInputStream, ObjectOutputStream에서 사용하려면 직렬화를 구현해야함.
-
+// MVC 아키텍쳐에서 Model에 해당하는 클래스. 데이터를 정의하는 클래스.
+// ObjectInputStream, ObjectOutputStream에서 사용하려면 직렬화를 구현해야 함.
 public class Contact implements Serializable {
     // field
     private String name;
@@ -45,10 +44,10 @@ public class Contact implements Serializable {
         this.email = email;
     }
     
-     
     @Override
     public String toString() {
-        return String.format("Contact(name=%s, phone=%s, email=%s", 
+        return String.format("Contact(name=%s, phone=%s, email=%s)", 
                 name, phone, email);
     }
+    
 }

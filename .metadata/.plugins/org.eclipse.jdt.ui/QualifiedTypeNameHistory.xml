@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="javax.security.auth.callback.LanguageCallback"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="edu.java.list04.User"/>
-    <fullyQualifiedTypeName name="java.util.TreeSet"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.util.TreeMap"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver03.ContactDao"/>
     <fullyQualifiedTypeName name="edu.java.contact.menu.MainMenu"/>
@@ -26,7 +13,6 @@
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="edu.java.file06.Product"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
@@ -42,7 +28,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="edu.java.contact.ver04.Contact"/>
     <fullyQualifiedTypeName name="edu.java.inner01.Outer"/>
     <fullyQualifiedTypeName name="edu.java.inner01.Outer.Inner"/>
@@ -52,12 +37,27 @@
     <fullyQualifiedTypeName name="edu.java.inner02.Button"/>
     <fullyQualifiedTypeName name="SaveButtonListener"/>
     <fullyQualifiedTypeName name="edu.java.inner02.Button.OnClickListener"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="edu.java.inner03.Book"/>
     <fullyQualifiedTypeName name="edu.java.inner03.Book.BookBuilder"/>
     <fullyQualifiedTypeName name="Subtracter"/>
-    <fullyQualifiedTypeName name="edu.java.lambda01.Calculable"/>
     <fullyQualifiedTypeName name="edu.java.lambda01.Printable"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="edu.java.lambda01.Adder"/>
+    <fullyQualifiedTypeName name="Adder"/>
+    <fullyQualifiedTypeName name="edu.java.lambda01.Calculable"/>
+    <fullyQualifiedTypeName name="edu.java.lambda02.Calculator"/>
+    <fullyQualifiedTypeName name="edu.java.lambda02.Calculator.Calculable"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="MyThread"/>
+    <fullyQualifiedTypeName name="MyRunnable"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="edu.java.lambda04.Employee"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
