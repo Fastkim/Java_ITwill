@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="edu.java.file06.Product"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="edu.java.file08.Student"/>
     <fullyQualifiedTypeName name="edu.java.file08.Score"/>
     <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
@@ -19,7 +12,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="edu.java.contact.ver04.Contact"/>
     <fullyQualifiedTypeName name="edu.java.inner01.Outer"/>
     <fullyQualifiedTypeName name="edu.java.inner01.Outer.Inner"/>
     <fullyQualifiedTypeName name="edu.java.inner01.Enclosing"/>
@@ -33,7 +25,6 @@
     <fullyQualifiedTypeName name="Subtracter"/>
     <fullyQualifiedTypeName name="edu.java.lambda01.Printable"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="edu.java.lambda01.Adder"/>
     <fullyQualifiedTypeName name="Adder"/>
     <fullyQualifiedTypeName name="edu.java.lambda01.Calculable"/>
@@ -55,9 +46,18 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="edu.java.swing06.MyCustomFrame"/>
     <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="javax.swing.DefaultListModel"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="edu.java.swing10.Score"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="javax.swing.table.DefaultTableModel"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver04.ContactDaoImpl"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver04.Contact"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver05.ContactCreateFrame"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver05.ContactCreateFrame.ContactInsertListener"/>
+    <fullyQualifiedTypeName name="edu.java.contact.ver05.ContactMain05"/>
 </qualifiedTypeNameHistroy>
