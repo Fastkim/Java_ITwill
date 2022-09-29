@@ -20,47 +20,52 @@ import java.awt.event.ActionEvent;
 public class ContactCreateFrame extends JFrame {
     
     @FunctionalInterface
-    public interface ContactInsertListener{
+    public interface ContactInsertListener {
         void contactInsertNotify(Contact c);
     }
-    
+
     private ContactInsertListener listener;
+    private Component parent;
     
     private JPanel contentPane;
-    private Component parent;
     private JTextField textName;
     private JTextField textPhone;
     private JTextField textEmail;
-
+    
     /**
      * Launch the application.
      */
     public static void newContactCreateFrame(Component parent, ContactInsertListener listener) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                    ContactCreateFrame frame = new ContactCreateFrame(parent, listener);
-                    frame.setVisible(true);
+                ContactCreateFrame frame = new ContactCreateFrame(parent, listener);
+                frame.setVisible(true);
             }
         });
     }
-    
-    public ContactCreateFrame(Component parent, ContactInsertListener listener) { // 생성자
+
+    /**
+     * Create the frame.
+     */
+    public ContactCreateFrame(Component parent, ContactInsertListener listener) {
         this.parent = parent; // 부모 컴포넌트를 초기화.
         this.listener = listener; // contactInsertNotify() 메서드를 가지고 있는 객체를 초기화.
         initialize(); // UI 컴포넌트들을 생성, 초기화.
     }
     
     /**
-     * Create the frame.
+     * Initialize UI components.
      */
-    public void initialize() { // UI 메소드
-        setTitle("새 연락처 추가");
+    private void initialize() {
+        setTitle("새 연락처 추가"); // JFrame의 타이틀 설정.
+        
         // 닫기 버튼을 클릭했을 때의 기본 동작 설정 - 현재 창만 닫기
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
+        // JFrame이 화면에 보이게 될 좌표와 크기(가로/세로)를 설정.
         int x = parent.getX(); // 부모 컴포넌트의 x 좌표
         int y = parent.getY(); // 부모 컴포넌트의 y 좌표
-        setBounds(x, y, 420, 384);
+        setBounds(x, y, 450, 300);
         
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -70,41 +75,38 @@ public class ContactCreateFrame extends JFrame {
         
         JLabel lblName = new JLabel("이름");
         lblName.setHorizontalAlignment(SwingConstants.CENTER);
-        lblName.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        lblName.setBounds(12, 10, 91, 55);
+        lblName.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        lblName.setBounds(12, 10, 120, 48);
         contentPane.add(lblName);
         
         JLabel lblPhone = new JLabel("전화번호");
         lblPhone.setHorizontalAlignment(SwingConstants.CENTER);
-        lblPhone.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        lblPhone.setBounds(12, 75, 91, 55);
+        lblPhone.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        lblPhone.setBounds(12, 68, 120, 48);
         contentPane.add(lblPhone);
         
         JLabel lblEmail = new JLabel("이메일");
         lblEmail.setHorizontalAlignment(SwingConstants.CENTER);
-        lblEmail.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        lblEmail.setBounds(12, 140, 91, 55);
+        lblEmail.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        lblEmail.setBounds(12, 122, 120, 48);
         contentPane.add(lblEmail);
         
         textName = new JTextField();
-        textName.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        textName.setHorizontalAlignment(SwingConstants.LEFT);
-        textName.setBounds(115, 10, 275, 55);
+        textName.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        textName.setBounds(144, 10, 278, 48);
         contentPane.add(textName);
         textName.setColumns(10);
         
         textPhone = new JTextField();
-        textPhone.setHorizontalAlignment(SwingConstants.LEFT);
-        textPhone.setFont(new Font("D2Coding", Font.PLAIN, 20));
+        textPhone.setFont(new Font("D2Coding", Font.PLAIN, 24));
         textPhone.setColumns(10);
-        textPhone.setBounds(115, 75, 275, 55);
+        textPhone.setBounds(144, 69, 278, 48);
         contentPane.add(textPhone);
         
         textEmail = new JTextField();
-        textEmail.setHorizontalAlignment(SwingConstants.LEFT);
-        textEmail.setFont(new Font("D2Coding", Font.PLAIN, 20));
+        textEmail.setFont(new Font("D2Coding", Font.PLAIN, 24));
         textEmail.setColumns(10);
-        textEmail.setBounds(115, 140, 275, 55);
+        textEmail.setBounds(144, 122, 278, 48);
         contentPane.add(textEmail);
         
         JButton btnSave = new JButton("저장");
@@ -114,22 +116,23 @@ public class ContactCreateFrame extends JFrame {
                 createNewContact();
             }
         });
-        btnSave.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        btnSave.setBounds(12, 205, 97, 69);
+        btnSave.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        btnSave.setBounds(12, 180, 120, 48);
         contentPane.add(btnSave);
         
         JButton btnCancel = new JButton("취소");
         btnCancel.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
                 dispose(); // 현재 창만 닫고, 부모 컴포넌트는 계속 실행.
             }
         });
-        btnCancel.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        btnCancel.setBounds(115, 205, 97, 69);
+        btnCancel.setFont(new Font("D2Coding", Font.PLAIN, 24));
+        btnCancel.setBounds(144, 180, 120, 48);
         contentPane.add(btnCancel);
     }
 
-    protected void createNewContact() {
+    private void createNewContact() {
         // 3개의 JTextField의 입력된 문자열을 읽음.
         String name = textName.getText();
         String phone = textPhone.getText();
@@ -137,12 +140,13 @@ public class ContactCreateFrame extends JFrame {
         
         // Contact 객체 생성
         Contact contact = new Contact(name, phone, email);
+
+        // 현재 창 닫기
+        dispose();
         
         // 새 연락처가 생성됐음을 (ContactMain에게) 알려줌.
         listener.contactInsertNotify(contact);
         
-        // 현재 창 닫기
-        dispose();
     }
 
 }

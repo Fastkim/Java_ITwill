@@ -47,4 +47,11 @@ public interface ContactDao {
      */
     int delete(int index);
     
+    /**
+     * 연락처 검색 기능
+     * 
+     * @
+     * 
+     */
+    
 }
