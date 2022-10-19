@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 // 데이터베이스에 생성된 테이블(BLOGS)의 각 컬럼들을 필드(멤버 변수)로 선언한 모델 클래스.
 public class Blog {
-
+    
     public interface Entity {
         String TBL_BLOGS = "BLOGS"; // 테이블 이름
         String COL_BLOG_NO = "BLOG_NO"; // 컬럼 이름 - 블로그 글 번호
@@ -24,8 +24,8 @@ public class Blog {
     
     public Blog() {}
 
-    public Blog(Integer blogNo, String title, String content, String author, LocalDateTime createdDate,
-            LocalDateTime modifiedDate) {
+    public Blog(Integer blogNo, String title, String content, String author, 
+            LocalDateTime createdDate, LocalDateTime modifiedDate) {
         this.blogNo = blogNo;
         this.title = title;
         this.content = content;
@@ -57,14 +57,12 @@ public class Blog {
     public LocalDateTime getModifiedDate() {
         return modifiedDate;
     }
-    
+
     @Override
     public String toString() {
         return String.format(
-                "Blog(No.=%d, title=%s, content=%s, author=%s, createdDate=%s, modified=%s)",
+                "Blog(No=%d, title=%s, content=%s, author=%s, created=%s, modified=%s", 
                 blogNo, title, content, author, createdDate, modifiedDate);
-                
-                
     }
     
 }
