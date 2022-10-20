@@ -1,28 +1,23 @@
 package java_itwill_project_view;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
-import java.awt.Font;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import java_itwill_project_controller.LoginDaoImpl;
 import java_itwill_project_model.Login;
-import java_itwill_project_view.AlteredCreateFrame.OnAlteredInsertListener;
-
-import java.awt.BorderLayout;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class LoginCreateAccountFrame extends JFrame {
 
@@ -73,13 +68,12 @@ public class LoginCreateAccountFrame extends JFrame {
     private void initialize() {
         setTitle("회원가입");
         
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
         int x = parent.getX();
         int y = parent.getY();
         setBounds(x, y, 337, 352);
         
         contentPane = new JPanel();
+        contentPane.setBackground(new Color(204, 204, 255));
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
     
         setContentPane(contentPane);
@@ -87,6 +81,7 @@ public class LoginCreateAccountFrame extends JFrame {
         
         
         JPanel panelTitle = new JPanel();
+        panelTitle.setBackground(new Color(204, 204, 255));
         panelTitle.setBounds(0, 20, 308, 40);
         contentPane.add(panelTitle);
         
@@ -96,6 +91,7 @@ public class LoginCreateAccountFrame extends JFrame {
         panelTitle.add(lblTitle);
         
         JPanel panelId = new JPanel();
+        panelId.setBackground(new Color(204, 204, 255));
         panelId.setBounds(0, 82, 308, 27);
         contentPane.add(panelId);
         panelId.setLayout(null);
@@ -112,6 +108,7 @@ public class LoginCreateAccountFrame extends JFrame {
         textId.setColumns(10);
         
         JPanel panelPassword = new JPanel();
+        panelPassword.setBackground(new Color(204, 204, 255));
         panelPassword.setLayout(null);
         panelPassword.setBounds(0, 119, 308, 27);
         contentPane.add(panelPassword);
@@ -128,6 +125,7 @@ public class LoginCreateAccountFrame extends JFrame {
         panelPassword.add(textPassword);
         
         JPanel panelName = new JPanel();
+        panelName.setBackground(new Color(204, 204, 255));
         panelName.setLayout(null);
         panelName.setBounds(0, 156, 308, 27);
         contentPane.add(panelName);
@@ -144,6 +142,7 @@ public class LoginCreateAccountFrame extends JFrame {
         panelName.add(textName);
         
         JPanel panelPhone = new JPanel();
+        panelPhone.setBackground(new Color(204, 204, 255));
         panelPhone.setLayout(null);
         panelPhone.setBounds(0, 193, 308, 27);
         contentPane.add(panelPhone);
@@ -160,6 +159,7 @@ public class LoginCreateAccountFrame extends JFrame {
         panelPhone.add(textPhone);
         
         JPanel panelbtn = new JPanel();
+        panelbtn.setBackground(new Color(204, 204, 255));
         panelbtn.setBounds(0, 244, 308, 38);
         contentPane.add(panelbtn);
         panelbtn.setLayout(null);
@@ -198,6 +198,7 @@ public class LoginCreateAccountFrame extends JFrame {
                     "아이디, 비밀번호, 이름, 전화번호는 반드시 입력해야합니다!",
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
+            return;
         }
         
         Login login = new Login(null, Id, passWord, name, phone);

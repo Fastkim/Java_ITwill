@@ -20,6 +20,7 @@ import javax.swing.JComboBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class AlteredUpdateFrame extends JFrame {
 
@@ -92,24 +93,24 @@ public class AlteredUpdateFrame extends JFrame {
      * Initialize the contents of the frame.
      */
     private void initialize() {
-        setTitle("새 수선 요청글 작성");
+        setTitle("요청글 수정");
     
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
         int x = parent.getX(); // 부모 창의 x 좌표
         int y = parent.getY(); // 부모 창의 y 좌표
         setBounds(x, y, 676, 908);
         
         contentPane = new JPanel();
+        contentPane.setBackground(new Color(255, 250, 250));
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         
         setContentPane(contentPane);
         contentPane.setLayout(null);
         
         JLabel lblTitle = new JLabel("제목");
+        lblTitle.setForeground(new Color(255, 51, 204));
         lblTitle.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
-        lblTitle.setBounds(12, 62, 87, 41);
+        lblTitle.setBounds(12, 62, 87, 49);
         contentPane.add(lblTitle);
         
         textTitle = new JTextField();
@@ -119,6 +120,7 @@ public class AlteredUpdateFrame extends JFrame {
         textTitle.setColumns(10);
         
         JLabel lblDetailAltered = new JLabel("수선내용");
+        lblDetailAltered.setForeground(new Color(255, 51, 204));
         lblDetailAltered.setHorizontalAlignment(SwingConstants.CENTER);
         lblDetailAltered.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblDetailAltered.setBounds(12, 141, 142, 41);
@@ -134,18 +136,20 @@ public class AlteredUpdateFrame extends JFrame {
         textDetailAltered.setColumns(10);
         
         JLabel lblType = new JLabel("옷 종류");
+        lblType.setForeground(new Color(255, 51, 204));
         lblType.setHorizontalAlignment(SwingConstants.CENTER);
         lblType.setFont(new Font("D2Coding", Font.PLAIN, 25));
-        lblType.setBounds(211, 141, 142, 41);
+        lblType.setBounds(223, 141, 124, 41);
         contentPane.add(lblType);
         
         textClothesType = new JTextField();
         textClothesType.setFont(new Font("D2Coding", Font.PLAIN, 15));
-        textClothesType.setBounds(359, 141, 177, 41);
+        textClothesType.setBounds(359, 141, 142, 41);
         contentPane.add(textClothesType);
         textClothesType.setColumns(10);
         
         JLabel lblAuthor = new JLabel("작성자(닉네임)");
+        lblAuthor.setForeground(new Color(204, 0, 0));
         lblAuthor.setHorizontalAlignment(SwingConstants.CENTER);
         lblAuthor.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblAuthor.setBounds(12, 414, 233, 41);
@@ -170,12 +174,14 @@ public class AlteredUpdateFrame extends JFrame {
         contentPane.add(btnUpdate);
         
         JLabel lblAlteredNo = new JLabel("번호");
+        lblAlteredNo.setForeground(new Color(204, 0, 0));
         lblAlteredNo.setHorizontalAlignment(SwingConstants.CENTER);
         lblAlteredNo.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblAlteredNo.setBounds(12, 7, 87, 41);
         contentPane.add(lblAlteredNo);
         
         JLabel lblCreated = new JLabel("작성시간");
+        lblCreated.setForeground(new Color(204, 0, 0));
         lblCreated.setHorizontalAlignment(SwingConstants.CENTER);
         lblCreated.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblCreated.setBounds(12, 535, 233, 41);
@@ -189,6 +195,7 @@ public class AlteredUpdateFrame extends JFrame {
         contentPane.add(textCreated);
         
         JLabel lblModified = new JLabel("최종 업데이트 시간");
+        lblModified.setForeground(new Color(204, 0, 0));
         lblModified.setHorizontalAlignment(SwingConstants.CENTER);
         lblModified.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblModified.setBounds(12, 651, 233, 41);
@@ -205,8 +212,13 @@ public class AlteredUpdateFrame extends JFrame {
         textAlteredNo.setEditable(false);
         textAlteredNo.setFont(new Font("D2Coding", Font.PLAIN, 20));
         textAlteredNo.setColumns(10);
-        textAlteredNo.setBounds(114, 9, 205, 41);
+        textAlteredNo.setBounds(114, 9, 106, 41);
         contentPane.add(textAlteredNo);
+        
+        JLabel lblexample = new JLabel("바지,티셔츠 etc..");
+        lblexample.setFont(new Font("굴림", Font.BOLD, 13));
+        lblexample.setBounds(513, 141, 125, 41);
+        contentPane.add(lblexample);
     }
     
     private void updateAltered() {

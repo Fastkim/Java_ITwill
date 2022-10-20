@@ -30,6 +30,7 @@ import javax.swing.DefaultComboBoxModel;
 import static java_itwill_project_model.Altered.Entity.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAlteredUpdateListener {
 
@@ -98,9 +99,11 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         getContentPane().setLayout(new BorderLayout(0, 0));
 
         JPanel panel = new JPanel();
+        panel.setBackground(new Color(255, 255, 204));
         getContentPane().add(panel, BorderLayout.NORTH);
 
         JButton btnRequest_1 = new JButton("모든요청 보기");
+        btnRequest_1.setBackground(new Color(204, 255, 153));
         btnRequest_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -111,6 +114,7 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         panel.add(btnRequest_1);
 
         JButton btnRequest = new JButton("수선 요청하기");
+        btnRequest.setBackground(new Color(255, 153, 153));
         btnRequest.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -121,6 +125,7 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         panel.add(btnRequest);
 
         JButton btnDelete = new JButton("요청 삭제하기");
+        btnDelete.setBackground(new Color(255, 153, 204));
         btnDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -131,6 +136,7 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         panel.add(btnDelete);
 
         JButton btnUpdate = new JButton("상세보기");
+        btnUpdate.setBackground(new Color(255, 153, 255));
         btnUpdate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -141,6 +147,7 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         panel.add(btnUpdate);
 
         JScrollPane scrollPane = new JScrollPane();
+        scrollPane.setForeground(new Color(204, 153, 255));
         getContentPane().add(scrollPane, BorderLayout.CENTER);
 
         table = new JTable();
@@ -149,6 +156,7 @@ public class AlteredMain extends JFrame implements OnAlteredInsertListener, OnAl
         scrollPane.setViewportView(table);
 
         JPanel searchPanel = new JPanel();
+        searchPanel.setBackground(new Color(255, 255, 204));
         getContentPane().add(searchPanel, BorderLayout.SOUTH);
 
         comboBox = new JComboBox();

@@ -1,9 +1,10 @@
 package java_itwill_project_controller;
 
-import static java_itwill_project_oracle.OracleJdbc.*;
-import static java_itwill_project_model.Login.Entity.*;
-import static java_itwill_project_controller.jdbcSqlLogin.*;
-
+import static java_itwill_project_controller.jdbcSqlLogin.SQL_CREATE_ACCOUNT;
+import static java_itwill_project_controller.jdbcSqlLogin.SQL_SELECT_LOGIN;
+import static java_itwill_project_oracle.OracleJdbc.PASSWORD;
+import static java_itwill_project_oracle.OracleJdbc.URL;
+import static java_itwill_project_oracle.OracleJdbc.USER;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,21 +13,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 import java_itwill_project_model.Login;
-import java_itwill_project_view.AlteredMain;
-import java_itwill_project_view.AlteredMain.OnLoginListener;
-import java_itwill_project_view.LoginMain;
 import oracle.jdbc.OracleDriver;
-import java_itwill_project_view.AlteredMain;
-import java_itwill_project_view.LoginMain;
 
-public class LoginDaoImpl extends JFrame implements LoginDao {
-
-    private OnLoginListener dao;
-    private LoginMain logindao;
+public class LoginDaoImpl implements LoginDao {
     
     // Singleton 적용
     private static LoginDaoImpl instance = null;

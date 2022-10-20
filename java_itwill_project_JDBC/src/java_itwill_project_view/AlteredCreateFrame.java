@@ -20,6 +20,7 @@ import javax.swing.JComboBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class AlteredCreateFrame extends JFrame {
 
@@ -70,22 +71,21 @@ public class AlteredCreateFrame extends JFrame {
     private void initialize() {
         setTitle("새 수선 요청글 작성");
     
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
         int x = parent.getX(); // 부모 창의 x 좌표
         int y = parent.getY(); // 부모 창의 y 좌표
-        setBounds(x, y, 669, 678);
+        setBounds(x, y, 669, 607);
         
         contentPane = new JPanel();
+        contentPane.setBackground(new Color(255, 245, 238));
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         
         setContentPane(contentPane);
         contentPane.setLayout(null);
         
-        JLabel lblTitle = new JLabel("제목");
+        JLabel lblTitle = new JLabel("요청글 제목");
         lblTitle.setFont(new Font("D2Coding", Font.PLAIN, 25));
         lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
-        lblTitle.setBounds(12, 10, 87, 41);
+        lblTitle.setBounds(12, 10, 179, 41);
         contentPane.add(lblTitle);
         
         textTitle = new JTextField();
@@ -112,12 +112,12 @@ public class AlteredCreateFrame extends JFrame {
         JLabel lblType = new JLabel("옷 종류");
         lblType.setHorizontalAlignment(SwingConstants.CENTER);
         lblType.setFont(new Font("D2Coding", Font.PLAIN, 25));
-        lblType.setBounds(211, 141, 142, 41);
+        lblType.setBounds(211, 141, 122, 41);
         contentPane.add(lblType);
         
         textClothesType = new JTextField();
         textClothesType.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        textClothesType.setBounds(359, 141, 177, 41);
+        textClothesType.setBounds(342, 141, 169, 41);
         contentPane.add(textClothesType);
         textClothesType.setColumns(10);
         
@@ -129,7 +129,7 @@ public class AlteredCreateFrame extends JFrame {
         
         textAuthor = new JTextField();
         textAuthor.setFont(new Font("D2Coding", Font.PLAIN, 20));
-        textAuthor.setBounds(12, 460, 233, 41);
+        textAuthor.setBounds(257, 411, 381, 41);
         contentPane.add(textAuthor);
         textAuthor.setColumns(10);
         
@@ -141,8 +141,13 @@ public class AlteredCreateFrame extends JFrame {
             }
         });
         btnCreate.setFont(new Font("D2Coding", Font.PLAIN, 25));
-        btnCreate.setBounds(263, 558, 157, 50);
+        btnCreate.setBounds(243, 496, 157, 50);
         contentPane.add(btnCreate);
+        
+        JLabel lblexample = new JLabel("바지,티셔츠 etc..");
+        lblexample.setFont(new Font("굴림", Font.BOLD, 13));
+        lblexample.setBounds(528, 141, 110, 41);
+        contentPane.add(lblexample);
     }
 
     protected void createNewAlteredpost() {

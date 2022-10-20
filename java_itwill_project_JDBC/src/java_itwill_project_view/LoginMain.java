@@ -67,12 +67,18 @@ public class LoginMain implements OnLoginInsertListener, OnLoginListener {
      * Initialize the contents of the frame.
      */
     public void initialize() {
+        
         frame = new JFrame();
+        frame.getContentPane().setBackground(new Color(204, 204, 255));
+        frame.getContentPane().setForeground(new Color(0, 255, 64));
         frame.setBounds(100, 100, 368, 321);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
         
+        frame.setTitle("로그인");
+        
         JPanel panel = new JPanel();
+        panel.setBackground(new Color(204, 153, 255));
         panel.setBounds(0, 25, 352, 40);
         frame.getContentPane().add(panel);
         
@@ -137,11 +143,11 @@ public class LoginMain implements OnLoginInsertListener, OnLoginListener {
 
     @Override
     public void onLoginInserted() {
-        initialize();
+
     }
     
     public void onLogin() {
-        initialize();
+
     }
     
   
